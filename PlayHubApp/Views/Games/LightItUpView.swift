@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LightItUp: View {
+struct LightItUpView: View {
     // Instantiate the ViewModel to manage our state and game logic
     @StateObject private var viewModel = LightItUpViewModel()
     
@@ -120,7 +120,7 @@ struct LightItUp: View {
 }
 
 #Preview {
-    LightItUp()
+    LightItUpView()
 }
 
 
