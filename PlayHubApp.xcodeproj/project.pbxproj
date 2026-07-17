@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC7616E13009286800AFA16D /* PlayHubAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7616E03009286800AFA16D /* PlayHubAppApp.swift */; };
+		CC7616E33009286800AFA16D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7616E23009286800AFA16D /* ContentView.swift */; };
+		CC7616E53009286A00AFA16D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC7616E43009286A00AFA16D /* Assets.xcassets */; };
+		CC7616E83009286A00AFA16D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC7616E73009286A00AFA16D /* Preview Assets.xcassets */; };
+		CC7616F23009286A00AFA16D /* PlayHubAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7616F13009286A00AFA16D /* PlayHubAppTests.swift */; };
+		CC7616FC3009286A00AFA16D /* PlayHubAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7616FB3009286A00AFA16D /* PlayHubAppUITests.swift */; };
+		CC7616FE3009286A00AFA16D /* PlayHubAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7616FD3009286A00AFA16D /* PlayHubAppUITestsLaunchTests.swift */; };
+		CCF0B1B83009DBEF0054D2EC /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0B1B73009DBEF0054D2EC /* QuizModel.swift */; };
+		CCF0B1BA3009DE130054D2EC /* TrapFrancyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0B1B93009DE130054D2EC /* TrapFrancyVM.swift */; };
+		CCF0B1BC3009DE2E0054D2EC /* QuizRushVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0B1BB3009DE2E0054D2EC /* QuizRushVM.swift */; };
+		CCF0B1BE3009DE4A0054D2EC /* QuizAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0B1BD3009DE4A0054D2EC /* QuizAPI.swift */; };
+		CCF0B1C03009DE9B0054D2EC /* QuizRushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0B1BF3009DE9B0054D2EC /* QuizRushView.swift */; };
+		CCF0B1C23009E7120054D2EC /* LightItUpVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0B1C13009E7120054D2EC /* LightItUpVM.swift */; };
+		CCF0B1C43009E78F0054D2EC /* LightItUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0B1C33009E78F0054D2EC /* LightItUpView.swift */; };
+		CCF0B1C63009EECC0054D2EC /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0B1C53009EECC0054D2EC /* HomeTab.swift */; };
+		CCF0B1C8300A20670054D2EC /* TapFrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0B1C7300A20670054D2EC /* TapFrencyView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC7616EE3009286A00AFA16D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC7616D53009286800AFA16D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7616DC3009286800AFA16D;
+			remoteInfo = PlayHubApp;
+		};
+		CC7616F83009286A00AFA16D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC7616D53009286800AFA16D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7616DC3009286800AFA16D;
+			remoteInfo = PlayHubApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC7616DD3009286800AFA16D /* PlayHubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayHubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7616E03009286800AFA16D /* PlayHubAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayHubAppApp.swift; sourceTree = "<group>"; };
+		CC7616E23009286800AFA16D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CC7616E43009286A00AFA16D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC7616E73009286A00AFA16D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CC7616ED3009286A00AFA16D /* PlayHubAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayHubAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7616F13009286A00AFA16D /* PlayHubAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayHubAppTests.swift; sourceTree = "<group>"; };
+		CC7616F73009286A00AFA16D /* PlayHubAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayHubAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7616FB3009286A00AFA16D /* PlayHubAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayHubAppUITests.swift; sourceTree = "<group>"; };
+		CC7616FD3009286A00AFA16D /* PlayHubAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayHubAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CCF0B1B73009DBEF0054D2EC /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		CCF0B1B93009DE130054D2EC /* TrapFrancyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapFrancyVM.swift; sourceTree = "<group>"; };
+		CCF0B1BB3009DE2E0054D2EC /* QuizRushVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizRushVM.swift; sourceTree = "<group>"; };
+		CCF0B1BD3009DE4A0054D2EC /* QuizAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAPI.swift; sourceTree = "<group>"; };
+		CCF0B1BF3009DE9B0054D2EC /* QuizRushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizRushView.swift; sourceTree = "<group>"; };
+		CCF0B1C13009E7120054D2EC /* LightItUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightItUpVM.swift; sourceTree = "<group>"; };
+		CCF0B1C33009E78F0054D2EC /* LightItUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightItUpView.swift; sourceTree = "<group>"; };
+		CCF0B1C53009EECC0054D2EC /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
+		CCF0B1C7300A20670054D2EC /* TapFrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapFrencyView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC7616DA3009286800AFA16D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7616EA3009286A00AFA16D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7616F43009286A00AFA16D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC7616D43009286800AFA16D = {
+			isa = PBXGroup;
+			children = (
+				CC7616DF3009286800AFA16D /* PlayHubApp */,
+				CC7616F03009286A00AFA16D /* PlayHubAppTests */,
+				CC7616FA3009286A00AFA16D /* PlayHubAppUITests */,
+				CC7616DE3009286800AFA16D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC7616DE3009286800AFA16D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC7616DD3009286800AFA16D /* PlayHubApp.app */,
+				CC7616ED3009286A00AFA16D /* PlayHubAppTests.xctest */,
+				CC7616F73009286A00AFA16D /* PlayHubAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC7616DF3009286800AFA16D /* PlayHubApp */ = {
+			isa = PBXGroup;
+			children = (
+				CC76170A30092D6700AFA16D /* App */,
+				CC76170B30092D7C00AFA16D /* Models */,
+				CC76170C30092E9000AFA16D /* ViewModels */,
+				CC76170D30092E9F00AFA16D /* Servicess */,
+				CC76170E30092EB000AFA16D /* Views */,
+				CC7616E43009286A00AFA16D /* Assets.xcassets */,
+				CC7616E23009286800AFA16D /* ContentView.swift */,
+				CC7616E63009286A00AFA16D /* Preview Content */,
+			);
+			path = PlayHubApp;
+			sourceTree = "<group>";
+		};
+		CC7616E63009286A00AFA16D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CC7616E73009286A00AFA16D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC7616F03009286A00AFA16D /* PlayHubAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC7616F13009286A00AFA16D /* PlayHubAppTests.swift */,
+			);
+			path = PlayHubAppTests;
+			sourceTree = "<group>";
+		};
+		CC7616FA3009286A00AFA16D /* PlayHubAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC7616FB3009286A00AFA16D /* PlayHubAppUITests.swift */,
+				CC7616FD3009286A00AFA16D /* PlayHubAppUITestsLaunchTests.swift */,
+			);
+			path = PlayHubAppUITests;
+			sourceTree = "<group>";
+		};
+		CC76170A30092D6700AFA16D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CC7616E03009286800AFA16D /* PlayHubAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CC76170B30092D7C00AFA16D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CCF0B1B73009DBEF0054D2EC /* QuizModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC76170C30092E9000AFA16D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CCF0B1B93009DE130054D2EC /* TrapFrancyVM.swift */,
+				CCF0B1BB3009DE2E0054D2EC /* QuizRushVM.swift */,
+				CCF0B1C13009E7120054D2EC /* LightItUpVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CC76170D30092E9F00AFA16D /* Servicess */ = {
+			isa = PBXGroup;
+			children = (
+				CCF0B1BD3009DE4A0054D2EC /* QuizAPI.swift */,
+			);
+			path = Servicess;
+			sourceTree = "<group>";
+		};
+		CC76170E30092EB000AFA16D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC76171030092EC400AFA16D /* Games */,
+				CC76170F30092EBA00AFA16D /* Tabs */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC76170F30092EBA00AFA16D /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				CCF0B1C53009EECC0054D2EC /* HomeTab.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		CC76171030092EC400AFA16D /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				CCF0B1BF3009DE9B0054D2EC /* QuizRushView.swift */,
+				CCF0B1C33009E78F0054D2EC /* LightItUpView.swift */,
+				CCF0B1C7300A20670054D2EC /* TapFrencyView.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC7616DC3009286800AFA16D /* PlayHubApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7617013009286A00AFA16D /* Build configuration list for PBXNativeTarget "PlayHubApp" */;
+			buildPhases = (
+				CC7616D93009286800AFA16D /* Sources */,
+				CC7616DA3009286800AFA16D /* Frameworks */,
+				CC7616DB3009286800AFA16D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlayHubApp;
+			productName = PlayHubApp;
+			productReference = CC7616DD3009286800AFA16D /* PlayHubApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC7616EC3009286A00AFA16D /* PlayHubAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7617043009286A00AFA16D /* Build configuration list for PBXNativeTarget "PlayHubAppTests" */;
+			buildPhases = (
+				CC7616E93009286A00AFA16D /* Sources */,
+				CC7616EA3009286A00AFA16D /* Frameworks */,
+				CC7616EB3009286A00AFA16D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC7616EF3009286A00AFA16D /* PBXTargetDependency */,
+			);
+			name = PlayHubAppTests;
+			productName = PlayHubAppTests;
+			productReference = CC7616ED3009286A00AFA16D /* PlayHubAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC7616F63009286A00AFA16D /* PlayHubAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7617073009286A00AFA16D /* Build configuration list for PBXNativeTarget "PlayHubAppUITests" */;
+			buildPhases = (
+				CC7616F33009286A00AFA16D /* Sources */,
+				CC7616F43009286A00AFA16D /* Frameworks */,
+				CC7616F53009286A00AFA16D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC7616F93009286A00AFA16D /* PBXTargetDependency */,
+			);
+			name = PlayHubAppUITests;
+			productName = PlayHubAppUITests;
+			productReference = CC7616F73009286A00AFA16D /* PlayHubAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC7616D53009286800AFA16D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					CC7616DC3009286800AFA16D = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					CC7616EC3009286A00AFA16D = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = CC7616DC3009286800AFA16D;
+					};
+					CC7616F63009286A00AFA16D = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = CC7616DC3009286800AFA16D;
+					};
+				};
+			};
+			buildConfigurationList = CC7616D83009286800AFA16D /* Build configuration list for PBXProject "PlayHubApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC7616D43009286800AFA16D;
+			productRefGroup = CC7616DE3009286800AFA16D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC7616DC3009286800AFA16D /* PlayHubApp */,
+				CC7616EC3009286A00AFA16D /* PlayHubAppTests */,
+				CC7616F63009286A00AFA16D /* PlayHubAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC7616DB3009286800AFA16D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7616E83009286A00AFA16D /* Preview Assets.xcassets in Resources */,
+				CC7616E53009286A00AFA16D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7616EB3009286A00AFA16D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7616F53009286A00AFA16D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC7616D93009286800AFA16D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF0B1C8300A20670054D2EC /* TapFrencyView.swift in Sources */,
+				CCF0B1C43009E78F0054D2EC /* LightItUpView.swift in Sources */,
+				CCF0B1BC3009DE2E0054D2EC /* QuizRushVM.swift in Sources */,
+				CCF0B1C23009E7120054D2EC /* LightItUpVM.swift in Sources */,
+				CCF0B1BE3009DE4A0054D2EC /* QuizAPI.swift in Sources */,
+				CC7616E33009286800AFA16D /* ContentView.swift in Sources */,
+				CCF0B1B83009DBEF0054D2EC /* QuizModel.swift in Sources */,
+				CCF0B1C03009DE9B0054D2EC /* QuizRushView.swift in Sources */,
+				CCF0B1BA3009DE130054D2EC /* TrapFrancyVM.swift in Sources */,
+				CCF0B1C63009EECC0054D2EC /* HomeTab.swift in Sources */,
+				CC7616E13009286800AFA16D /* PlayHubAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7616E93009286A00AFA16D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7616F23009286A00AFA16D /* PlayHubAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7616F33009286A00AFA16D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7616FE3009286A00AFA16D /* PlayHubAppUITestsLaunchTests.swift in Sources */,
+				CC7616FC3009286A00AFA16D /* PlayHubAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC7616EF3009286A00AFA16D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7616DC3009286800AFA16D /* PlayHubApp */;
+			targetProxy = CC7616EE3009286A00AFA16D /* PBXContainerItemProxy */;
+		};
+		CC7616F93009286A00AFA16D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7616DC3009286800AFA16D /* PlayHubApp */;
+			targetProxy = CC7616F83009286A00AFA16D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CC7616FF3009286A00AFA16D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC7617003009286A00AFA16D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC7617023009286A00AFA16D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlayHubApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ios.PlayHubApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC7617033009286A00AFA16D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlayHubApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ios.PlayHubApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC7617053009286A00AFA16D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ios.PlayHubAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayHubApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlayHubApp";
+			};
+			name = Debug;
+		};
+		CC7617063009286A00AFA16D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ios.PlayHubAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayHubApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlayHubApp";
+			};
+			name = Release;
+		};
+		CC7617083009286A00AFA16D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ios.PlayHubAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlayHubApp;
+			};
+			name = Debug;
+		};
+		CC7617093009286A00AFA16D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ios.PlayHubAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlayHubApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC7616D83009286800AFA16D /* Build configuration list for PBXProject "PlayHubApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7616FF3009286A00AFA16D /* Debug */,
+				CC7617003009286A00AFA16D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7617013009286A00AFA16D /* Build configuration list for PBXNativeTarget "PlayHubApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7617023009286A00AFA16D /* Debug */,
+				CC7617033009286A00AFA16D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7617043009286A00AFA16D /* Build configuration list for PBXNativeTarget "PlayHubAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7617053009286A00AFA16D /* Debug */,
+				CC7617063009286A00AFA16D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7617073009286A00AFA16D /* Build configuration list for PBXNativeTarget "PlayHubAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7617083009286A00AFA16D /* Debug */,
+				CC7617093009286A00AFA16D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC7616D53009286800AFA16D /* Project object */;
+}
