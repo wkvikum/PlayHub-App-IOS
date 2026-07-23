@@ -7,78 +7,104 @@
 
 import SwiftUI
 
-// 1. The main container that handles the navigation tabs
-struct MainTabView: View {
-    @State private var selectedTab = 0
+// initial tabview itrms
+enum AppTab: String, CaseIterable, Identifiable {
+    case home
+    case status
+    case map
+    case settings
     
+    var id: String { rawValue }
+    
+    var title: String {
+        switch self {
+        case .home: return "Home"
+        case .status: return "Stats"
+        case .map: return "Map"
+        case .settings: return "Settings"
+        }
+    }
+    
+    // Changes to a filled icon when selected
+    var iconName: String {
+        switch self {
+        case .home: return "house"
+        case .status: return "chart.bar"
+        case .map: return "map"
+        case .settings: return "gearshape"
+        }
+    }
+    
+    var activeIconName: String {
+        switch self {
+        case .home: return "house.fill"
+        case .status: return "chart.bar.fill"
+        case .map: return "map.fill"
+        case .settings: return "gearshape.fill"
+        }
+    }
+}
+
+// make tabe view in content view
+struct ContentView: View {
+    @State private var selectedTab: AppTab = .home
+
     var body: some View {
         TabView(selection: $selectedTab) {
             
-            // Your primary Content View
-            ContentView()
-                .tabItem {
-                    Label("Home", systemImage: "house.fill")
-                }
-                .tag(0)
-            
-            // A secondary Search View
-            SearchView()
-                .tabItem {
-                    Label("Stats", systemImage: "chart.bar.fill")
-                }
-                .tag(1)
-            
-            // A secondary Search View
-            SearchView()
-                .tabItem {
-                    Label("Maps", systemImage: "map.fill")
-                }
-                .tag(2)
-            
-            // A secondary Settings View
-            SettingsView()
-                .tabItem {
-                    Label("Settings", systemImage: "gearshape.fill")
-                }
-                .tag(3)
-        }
-        // Controls the color of the active tab icon and text
-        .accentColor(.blue)
-    }
-}
-
-// 2. Your actual Content View where the main app feature lives
-struct ContentView: View {
-    var body: some View {
-        NavigationStack {
-            VStack {
-                Text("Welcome Home")
-                    .font(.largeTitle)
-                    .bold()
-                Text("This is your primary screen content area.")
-                    .foregroundColor(.secondary)
+            // 1. Home Tab
+            NavigationStack {
+                HomeTab()
             }
-            .navigationTitle("Dashboard")
+            .tabItem {
+                Label(
+                    AppTab.home.title,
+                    systemImage: selectedTab == .home ? AppTab.home.activeIconName : AppTab.home.iconName
+                )
+            }
+            .tag(AppTab.home)
+
+            // 2. Status Tab
+            NavigationStack {
+                StatsTab()
+            }
+            .tabItem {
+                Label(
+                    AppTab.status.title,
+                    systemImage: selectedTab == .status ? AppTab.status.activeIconName : AppTab.status.iconName
+                )
+            }
+            .tag(AppTab.status)
+
+            // 3. Map Tab
+            NavigationStack {
+                MapTab()
+            }
+            .tabItem {
+                Label(
+                    AppTab.map.title,
+                    systemImage: selectedTab == .map ? AppTab.map.activeIconName : AppTab.map.iconName
+                )
+            }
+            .tag(AppTab.map)
+
+            // 4. Settings Tab
+            NavigationStack {
+                SettingsTab()
+            }
+            .tabItem {
+                Label(
+                    AppTab.settings.title,
+                    systemImage: selectedTab == .settings ? AppTab.settings.activeIconName : AppTab.settings.iconName
+                )
+            }
+            .tag(AppTab.settings)
         }
+        .tint(.accentColor) // Highlights selected tab icon/text
     }
 }
 
-// Dummy Placeholder Views for compilation
-struct SearchView: View {
-    var body: some View {
-        Text("Search Screen")
-            .font(.title)
-    }
-}
 
-struct SettingsView: View {
-    var body: some View {
-        Text("Settings Screen")
-            .font(.title)
-    }
-}
-
-// Preview provider for canvas rendering
 #Preview {
-    MainTabView()
+    ContentView()
 }
