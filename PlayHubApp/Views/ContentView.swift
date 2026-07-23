@@ -24,16 +24,23 @@ struct MainTabView: View {
             // A secondary Search View
             SearchView()
                 .tabItem {
-                    Label("Search", systemImage: "magnifyingglass")
+                    Label("Stats", systemImage: "chart.bar.fill")
                 }
                 .tag(1)
+            
+            // A secondary Search View
+            SearchView()
+                .tabItem {
+                    Label("Maps", systemImage: "map.fill")
+                }
+                .tag(2)
             
             // A secondary Settings View
             SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gearshape.fill")
                 }
-                .tag(2)
+                .tag(3)
         }
         // Controls the color of the active tab icon and text
         .accentColor(.blue)

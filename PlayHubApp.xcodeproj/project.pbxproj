@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC6B0E743011DC4500E49551 /* StatsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B0E733011DC4500E49551 /* StatsTab.swift */; };
+		CC6B0E763011DC5D00E49551 /* MapTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B0E753011DC5D00E49551 /* MapTab.swift */; };
+		CC6B0E783011DC7000E49551 /* SettingsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B0E773011DC7000E49551 /* SettingsTab.swift */; };
 		CC7616E13009286800AFA16D /* PlayHubAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7616E03009286800AFA16D /* PlayHubAppApp.swift */; };
 		CC7616E33009286800AFA16D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7616E23009286800AFA16D /* ContentView.swift */; };
 		CC7616E53009286A00AFA16D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC7616E43009286A00AFA16D /* Assets.xcassets */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC6B0E733011DC4500E49551 /* StatsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTab.swift; sourceTree = "<group>"; };
+		CC6B0E753011DC5D00E49551 /* MapTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTab.swift; sourceTree = "<group>"; };
+		CC6B0E773011DC7000E49551 /* SettingsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTab.swift; sourceTree = "<group>"; };
 		CC7616DD3009286800AFA16D /* PlayHubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayHubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC7616E03009286800AFA16D /* PlayHubAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayHubAppApp.swift; sourceTree = "<group>"; };
 		CC7616E23009286800AFA16D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,7 +124,6 @@
 				CC76170D30092E9F00AFA16D /* Servicess */,
 				CC76170E30092EB000AFA16D /* Views */,
 				CC7616E43009286A00AFA16D /* Assets.xcassets */,
-				CC7616E23009286800AFA16D /* ContentView.swift */,
 				CC7616E63009286A00AFA16D /* Preview Content */,
 			);
 			path = PlayHubApp;
@@ -186,6 +191,7 @@
 		CC76170E30092EB000AFA16D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CC7616E23009286800AFA16D /* ContentView.swift */,
 				CC76171030092EC400AFA16D /* Games */,
 				CC76170F30092EBA00AFA16D /* Tabs */,
 			);
@@ -196,6 +202,9 @@
 			isa = PBXGroup;
 			children = (
 				CCF0B1C53009EECC0054D2EC /* HomeTab.swift */,
+				CC6B0E733011DC4500E49551 /* StatsTab.swift */,
+				CC6B0E753011DC5D00E49551 /* MapTab.swift */,
+				CC6B0E773011DC7000E49551 /* SettingsTab.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -346,11 +355,14 @@
 				CCF0B1C23009E7120054D2EC /* LightItUpVM.swift in Sources */,
 				CCF0B1BE3009DE4A0054D2EC /* QuizAPI.swift in Sources */,
 				CC7616E33009286800AFA16D /* ContentView.swift in Sources */,
+				CC6B0E783011DC7000E49551 /* SettingsTab.swift in Sources */,
 				CCF0B1B83009DBEF0054D2EC /* QuizModel.swift in Sources */,
+				CC6B0E763011DC5D00E49551 /* MapTab.swift in Sources */,
 				CCF0B1C03009DE9B0054D2EC /* QuizRushView.swift in Sources */,
 				CCF0B1BA3009DE130054D2EC /* TrapFrancyVM.swift in Sources */,
 				CCF0B1C63009EECC0054D2EC /* HomeTab.swift in Sources */,
 				CC7616E13009286800AFA16D /* PlayHubAppApp.swift in Sources */,
+				CC6B0E743011DC4500E49551 /* StatsTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
