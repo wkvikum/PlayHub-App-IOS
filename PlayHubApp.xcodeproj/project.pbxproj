@@ -29,6 +29,8 @@
 		CCF0B1C8300A20670054D2EC /* TapFrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0B1C7300A20670054D2EC /* TapFrencyView.swift */; };
 		CCF984F330133DCF00424B7A /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF984F230133DCF00424B7A /* ResultView.swift */; };
 		CCF984F530133DF200424B7A /* ScoreBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF984F430133DF200424B7A /* ScoreBadge.swift */; };
+		CCF984F730133EC300424B7A /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF984F630133EC300424B7A /* GameMode.swift */; };
+		CCF984F930133EE100424B7A /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF984F830133EE100424B7A /* GameSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		CCF0B1C7300A20670054D2EC /* TapFrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapFrencyView.swift; sourceTree = "<group>"; };
 		CCF984F230133DCF00424B7A /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		CCF984F430133DF200424B7A /* ScoreBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBadge.swift; sourceTree = "<group>"; };
+		CCF984F630133EC300424B7A /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
+		CCF984F830133EE100424B7A /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +129,8 @@
 		CC7616DF3009286800AFA16D /* PlayHubApp */ = {
 			isa = PBXGroup;
 			children = (
-				CCF984F130133DA400424B7A /* Shared */,
 				CC76170A30092D6700AFA16D /* App */,
+				CCF984F130133DA400424B7A /* Shared */,
 				CC76170B30092D7C00AFA16D /* Models */,
 				CC76170C30092E9000AFA16D /* ViewModels */,
 				CC76170D30092E9F00AFA16D /* Servicess */,
@@ -174,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				CCF0B1B73009DBEF0054D2EC /* QuizModel.swift */,
+				CCF984F630133EC300424B7A /* GameMode.swift */,
+				CCF984F830133EE100424B7A /* GameSession.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -376,12 +382,14 @@
 				CC7616E33009286800AFA16D /* ContentView.swift in Sources */,
 				CC6B0E783011DC7000E49551 /* SettingsTab.swift in Sources */,
 				CCF0B1B83009DBEF0054D2EC /* QuizModel.swift in Sources */,
+				CCF984F730133EC300424B7A /* GameMode.swift in Sources */,
 				CC6B0E763011DC5D00E49551 /* MapTab.swift in Sources */,
 				CCF984F530133DF200424B7A /* ScoreBadge.swift in Sources */,
 				CCF0B1C03009DE9B0054D2EC /* QuizRushView.swift in Sources */,
 				CCF0B1BA3009DE130054D2EC /* TrapFrancyVM.swift in Sources */,
 				CCF0B1C63009EECC0054D2EC /* HomeTab.swift in Sources */,
 				CC7616E13009286800AFA16D /* PlayHubAppApp.swift in Sources */,
+				CCF984F930133EE100424B7A /* GameSession.swift in Sources */,
 				CC6B0E743011DC4500E49551 /* StatsTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
