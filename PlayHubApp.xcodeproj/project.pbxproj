@@ -27,6 +27,8 @@
 		CCF0B1C43009E78F0054D2EC /* LightItUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0B1C33009E78F0054D2EC /* LightItUpView.swift */; };
 		CCF0B1C63009EECC0054D2EC /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0B1C53009EECC0054D2EC /* HomeTab.swift */; };
 		CCF0B1C8300A20670054D2EC /* TapFrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0B1C7300A20670054D2EC /* TapFrencyView.swift */; };
+		CCF984F330133DCF00424B7A /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF984F230133DCF00424B7A /* ResultView.swift */; };
+		CCF984F530133DF200424B7A /* ScoreBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF984F430133DF200424B7A /* ScoreBadge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		CCF0B1C33009E78F0054D2EC /* LightItUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightItUpView.swift; sourceTree = "<group>"; };
 		CCF0B1C53009EECC0054D2EC /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
 		CCF0B1C7300A20670054D2EC /* TapFrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapFrencyView.swift; sourceTree = "<group>"; };
+		CCF984F230133DCF00424B7A /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		CCF984F430133DF200424B7A /* ScoreBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBadge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 		CC7616DF3009286800AFA16D /* PlayHubApp */ = {
 			isa = PBXGroup;
 			children = (
+				CCF984F130133DA400424B7A /* Shared */,
 				CC76170A30092D6700AFA16D /* App */,
 				CC76170B30092D7C00AFA16D /* Models */,
 				CC76170C30092E9000AFA16D /* ViewModels */,
@@ -220,6 +225,15 @@
 				CCF0B1C7300A20670054D2EC /* TapFrencyView.swift */,
 			);
 			path = Games;
+			sourceTree = "<group>";
+		};
+		CCF984F130133DA400424B7A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CCF984F230133DCF00424B7A /* ResultView.swift */,
+				CCF984F430133DF200424B7A /* ScoreBadge.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +369,7 @@
 			files = (
 				CCF0B1C8300A20670054D2EC /* TapFrencyView.swift in Sources */,
 				CCF0B1C43009E78F0054D2EC /* LightItUpView.swift in Sources */,
+				CCF984F330133DCF00424B7A /* ResultView.swift in Sources */,
 				CCF0B1BC3009DE2E0054D2EC /* QuizRushVM.swift in Sources */,
 				CCF0B1C23009E7120054D2EC /* LightItUpVM.swift in Sources */,
 				CCF0B1BE3009DE4A0054D2EC /* QuizAPI.swift in Sources */,
@@ -362,6 +377,7 @@
 				CC6B0E783011DC7000E49551 /* SettingsTab.swift in Sources */,
 				CCF0B1B83009DBEF0054D2EC /* QuizModel.swift in Sources */,
 				CC6B0E763011DC5D00E49551 /* MapTab.swift in Sources */,
+				CCF984F530133DF200424B7A /* ScoreBadge.swift in Sources */,
 				CCF0B1C03009DE9B0054D2EC /* QuizRushView.swift in Sources */,
 				CCF0B1BA3009DE130054D2EC /* TrapFrancyVM.swift in Sources */,
 				CCF0B1C63009EECC0054D2EC /* HomeTab.swift in Sources */,
