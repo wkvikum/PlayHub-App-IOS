@@ -151,7 +151,7 @@ struct QuizRushView: View {
         VStack(spacing: 20) {
             Image(systemName: "trophy.fill")
                 .font(.system(size: 80))
-                .foregroundColor(.yellow)
+                .foregroundColor(.orange.opacity(0.6))
             
             Text("Quiz Complete")
                 .font(.largeTitle)
@@ -162,7 +162,7 @@ struct QuizRushView: View {
                 .foregroundColor(.secondary)
             
             Text("\(viewModel.score)")
-                .font(.system(size: 64, weight: .bold, design: .rounded))
+                .font(.system(size: 36, weight: .bold, design: .rounded))
             
             Button("Play Again") {
                 viewModel.currentIndex = 0

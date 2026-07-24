@@ -9,7 +9,17 @@ import SwiftUI
 
 struct StatsTab: View {
     var body: some View {
-        Text("This is Stats Tab")
+        HStack(){
+            
+            Image(systemName: "chart.bar.fill")
+                    .foregroundColor(.black)
+                    .font(.system(size:24))
+            Text(" Stats Tab")
+                .font(.title2)
+            Spacer()
+        }.padding(20)
+        
+        Spacer()
     }
 }
 

@@ -10,6 +10,7 @@
 		CC6B0E743011DC4500E49551 /* StatsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B0E733011DC4500E49551 /* StatsTab.swift */; };
 		CC6B0E763011DC5D00E49551 /* MapTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B0E753011DC5D00E49551 /* MapTab.swift */; };
 		CC6B0E783011DC7000E49551 /* SettingsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B0E773011DC7000E49551 /* SettingsTab.swift */; };
+		CC6B0E7A3012678E00E49551 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CC6B0E793012678E00E49551 /* README.md */; };
 		CC7616E13009286800AFA16D /* PlayHubAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7616E03009286800AFA16D /* PlayHubAppApp.swift */; };
 		CC7616E33009286800AFA16D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7616E23009286800AFA16D /* ContentView.swift */; };
 		CC7616E53009286A00AFA16D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC7616E43009286A00AFA16D /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		CC6B0E733011DC4500E49551 /* StatsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTab.swift; sourceTree = "<group>"; };
 		CC6B0E753011DC5D00E49551 /* MapTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTab.swift; sourceTree = "<group>"; };
 		CC6B0E773011DC7000E49551 /* SettingsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTab.swift; sourceTree = "<group>"; };
+		CC6B0E793012678E00E49551 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CC7616DD3009286800AFA16D /* PlayHubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayHubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC7616E03009286800AFA16D /* PlayHubAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayHubAppApp.swift; sourceTree = "<group>"; };
 		CC7616E23009286800AFA16D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		CC7616D43009286800AFA16D = {
 			isa = PBXGroup;
 			children = (
+				CC6B0E793012678E00E49551 /* README.md */,
 				CC7616DF3009286800AFA16D /* PlayHubApp */,
 				CC7616F03009286A00AFA16D /* PlayHubAppTests */,
 				CC7616FA3009286A00AFA16D /* PlayHubAppUITests */,
@@ -323,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC6B0E7A3012678E00E49551 /* README.md in Resources */,
 				CC7616E83009286A00AFA16D /* Preview Assets.xcassets in Resources */,
 				CC7616E53009286A00AFA16D /* Assets.xcassets in Resources */,
 			);

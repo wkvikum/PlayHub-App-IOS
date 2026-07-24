@@ -28,7 +28,7 @@ enum AppTab: String, CaseIterable, Identifiable {
     // Changes to a filled icon when selected
     var iconName: String {
         switch self {
-        case .home: return "house"
+        case .home: return "gamecontroller"
         case .status: return "chart.bar"
         case .map: return "map"
         case .settings: return "gearshape"
@@ -37,7 +37,7 @@ enum AppTab: String, CaseIterable, Identifiable {
     
     var activeIconName: String {
         switch self {
-        case .home: return "house.fill"
+        case .home: return "gamecontroller.fill"
         case .status: return "chart.bar.fill"
         case .map: return "map.fill"
         case .settings: return "gearshape.fill"

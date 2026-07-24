@@ -14,7 +14,7 @@ import SwiftUI
     var body: some View {
         NavigationStack {
             VStack(){
-                Text("Select The Game")
+                Text("Play Hub")
                     .font(.title)
 //                    .bold()
             }

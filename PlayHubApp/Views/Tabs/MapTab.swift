@@ -9,7 +9,17 @@ import SwiftUI
 
 struct MapTab: View {
     var body: some View {
-        Text("This is Map Tab")
+        HStack(){
+            
+            Image(systemName: "map.fill")
+                    .foregroundColor(.black)
+                    .font(.system(size:24))
+            Text(" Map Tab")
+                .font(.title2)
+            Spacer()
+        }.padding(20)
+        
+        Spacer()
     }
 }
 
